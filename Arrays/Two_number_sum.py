@@ -1,4 +1,7 @@
-
+### Problem
+'''
+Find the sum of two numbers from a given array length 'n' which equals to Target Value
+'''
 
 ### Solution 1
 # Time Complexity - O(n^2)
@@ -17,7 +20,6 @@ def twoNumberSum1(array, targetSum):
 ### Solution 2
 # Time Complexity - O(n)
 # Space Complexity - O(n)
-
 def twoNumberSum2(array,targetSum):
     num_dict = {}
     for num in array:
@@ -25,16 +27,15 @@ def twoNumberSum2(array,targetSum):
         if remValue in num_dict:
             return [remValue,num]
         else:
-            num_dict[remValue] = True
+            num_dict[num] = True
     return []
 
 
 ### Solution 3
-# Time Complexity - O(n)
-# Space Complexity - O(n)
-
+# Time Complexity - O(nlogn)
+# Space Complexity - O(1)
 def twoNumberSum3(array,targetSum):
-
+    ##sorting
     array.sort()
     left = 0
     right = len(array)-1
