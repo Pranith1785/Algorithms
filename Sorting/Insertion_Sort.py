@@ -3,9 +3,9 @@
 Sort the given integers in an array of size "n"
 '''
 
-### Problem
-# Time - 
-# Space - 
+### Solution 
+# Time - worst case O(n^2) | average O(n)
+# Space - O(1)
 def insertionSort(array):
 
     for i in range(1,len(array)):
