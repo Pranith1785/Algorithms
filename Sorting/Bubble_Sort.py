@@ -1,6 +1,9 @@
 ### Problem Statement
 '''
 Sort the array of given integers
+
+Approach : Traverse thr the array(outer loop) and again loop thru length of array minus outer loop element,
+        then swap the elements if number is bigger than next number
 '''
 
 ### Problem 1

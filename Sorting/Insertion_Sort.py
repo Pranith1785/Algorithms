@@ -1,6 +1,9 @@
 ### Problem Statement
 '''
 Sort the given integers in an array of size "n"
+
+Approach : First loop(i) starts from 1 to length of array and second loop from i to 0,
+        then swap the element if are in not in sorted order
 '''
 
 ### Solution 
