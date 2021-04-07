@@ -30,8 +30,8 @@ def minNumberOfJumps(array):
 
 
 ## Solution - 2
-## Time - 
-## Space - 
+## Time - O(n)
+## Space - O(1)
 
 def minNumberOfJumps2(array):
 
@@ -52,6 +52,6 @@ def minNumberOfJumps2(array):
 
 
 array = [3, 4, 2, 1, 2, 3, 7, 1, 1, 1, 3]
-array = [1,1]
+#array = [1,1]
 print(minNumberOfJumps(array))
 print(minNumberOfJumps2(array))
