@@ -30,6 +30,40 @@ def numberOfWaysToTraverseGraph(width,height):
     return ways[height][width]
 
 
+### Solution 2
+## Time - O(2^(n+m)) | Space - O(n+m)
+
+def numberOfWaysToTraverseGraph2(width,height):
+    if width == 1 or height ==1:
+        return 1
+    
+    return numberOfWaysToTraverseGraph2(width-1,height) + numberOfWaysToTraverseGraph2(width,height-1)
+
+
+### Solution 3
+## Time - O(n+m) | Space - O(1)
+
+def factorial(num):
+    if num == 1:
+        return 1
+    result = 1
+    for n in range(2,num+1):
+        result *= n
+    
+    return result
+
+def numberOfWaysToTraverseGraph3(width,height):
+    xDistanceToCorner = width-1
+    yDistanceToCorner = height -1
+
+    numerator = factorial(xDistanceToCorner + yDistanceToCorner)
+    denominator = factorial(xDistanceToCorner) * factorial(yDistanceToCorner)
+
+    return(numerator//denominator)
+
+
+
+
 height = 3
 width = 4
-print(numberOfWaysToTraverseGraph(width,height))
+print(numberOfWaysToTraverseGraph3(width,height))
