@@ -38,7 +38,7 @@ def waterArea(arrHeights):
             area += minHeight - arrHeights[idx]
     
     return area
-
+ 
 
 ### Solution -2 
 ## Time -  O(n)  | Space - O(1) 
