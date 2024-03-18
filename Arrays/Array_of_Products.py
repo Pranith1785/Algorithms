@@ -29,7 +29,7 @@ def arrayOfProducts(array):
 ## Solution 2
 ## Time - O(N) | Space - O(N)
 
-def arrayOfProducts2(array):
+def arrayOfProducts2(array : list[int]) -> list[int]:
     arrProduct = [1 for _ in range(len(array))]
     leftProduct = [1 for _ in range(len(array))]
     rightProduct = [1 for _ in range(len(array))]
@@ -49,5 +49,5 @@ def arrayOfProducts2(array):
 
     return arrProduct
         
-print(arrayOfProducts2([5,1,4,6]))
+print(arrayOfProducts2([5,0,4,6]))
 

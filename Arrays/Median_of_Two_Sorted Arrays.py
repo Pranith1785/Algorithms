@@ -68,7 +68,7 @@ def findMedianSortedArrays2(nums1 : list[int], nums2 : list[int]) -> float:
     while True:
         
         i = (l+r) // 2  ## A
-        j = half - mid_idx - 1  ## B
+        j = half - i - 1  ## B
  
         A_left = A[i] if i >= 0 else float("-infinity")
         A_right = A[i+1] if (i+1) < len(A) else float("infinity")
