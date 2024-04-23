@@ -21,7 +21,7 @@ class Node():
         
 class LinkedList():
 
-    def mergeList(self,l1 : [Node], l2 : [Node]) -> [Node] :
+    def mergeList(self,l1 , l2 ) -> list[Node] :
 
         finalNode = Node(0)
         curr = finalNode
