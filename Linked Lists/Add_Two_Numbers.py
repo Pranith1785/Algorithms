@@ -35,7 +35,7 @@ def add_two_numbers(l1 : [ListNode], l2 : [ListNode]) -> [ListNode] :
 
         val3 = val1 + val2 + carryVal
         ## updating
-        carryVal = carryVal // 10
+        carryVal = val3 // 10
         val3 = val3 % 10
 
         ## updating linked list nodes
