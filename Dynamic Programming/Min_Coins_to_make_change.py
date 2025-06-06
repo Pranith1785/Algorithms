@@ -15,12 +15,18 @@ def minCoinsToMakeChange(amount,denominations):
     minCoins[0] = 0
 
     for coin in denominations:
+        print(coin)
         for value in range(amount+1):
             if coin <= value:
                 minCoins[value] = min(minCoins[value],minCoins[value-coin]+1)
-    
+        print(minCoins)
     return minCoins[amount] if minCoins[amount] != float('inf') else -1
 
-amount = 135
-denominations = [39, 45, 130, 40, 4, 1, 60, 75]
-print(minCoinsToMakeChange(amount,denominations))
+
+
+
+print(minCoinsToMakeChange(11,[1,2,5]))
+
+#amount = 135
+#denominations = [39, 45, 130, 40, 4, 1, 60, 75]
+#print(minCoinsToMakeChange(amount,denominations))
